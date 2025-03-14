@@ -1,14 +1,29 @@
-GooglePhotos (arm64-v8a): 7.19.0.733486757  
-GooglePhotos (arm-v7a): 7.19.0.733486757  
-Music (arm64-v8a): 8.05.51  
-Music (arm-v7a): 8.05.51  
-YouTube: 19.47.53  
+CLI: ReVanced
+ReVanced/revanced-cli-5.0.0-all.jar
+revanced-cli-5.0.0-all.jar.asc  
+Integrations: ReVanced
+ReVanced/revanced-integrations-1.16.0.apk
+revanced-integrations-1.16.0.apk.asc  
+Patches: /  
+[Changelog](https://github.com/revanced/revanced-patches/releases/tag/v)
 
-Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
-Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanced YouTube and YT Music from Play Store  
 
-[revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
-  
-CLI: j-hc/revanced-cli-5.0.0-all.jar  
-Patches: ReVanced/patches-5.14.0.rvp  
-[Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v5.14.0)  
+
+
+CLI: inotia00/revanced-cli-5.0.1-all.jar  
+Integrations: inotia00/revanced-integrations-1.16.1.apk  
+Patches: /  
+[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v)
+
+
+
+
+CLI: ReVanced
+ReVanced/revanced-cli-5.0.0-all.jar
+revanced-cli-5.0.0-all.jar.asc  
+Integrations: anddea
+anddea/revanced-integrations-0.158.0.apk
+revanced-integrations-0.158.0.apk.asc  
+Patches: /  
+[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v)
+
