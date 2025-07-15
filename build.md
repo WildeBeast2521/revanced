@@ -4,14 +4,14 @@ revanced-cli-5.0.1-all.jar.asc
 Integrations: ReVanced
 ReVanced/revanced-integrations-1.16.0.apk
 revanced-integrations-1.16.0.apk.asc
-Patches: ReVanced/patches-5.31.1.rvp
-[Changelog](https://github.com/revanced/revanced-patches/releases/tag/v5.31.1)
+Patches: ReVanced/patches-5.31.2.rvp
+[Changelog](https://github.com/revanced/revanced-patches/releases/tag/v5.31.2)
 
 
 CLI: inotia00/revanced-cli-5.0.1-all.jar
 Integrations: inotia00/revanced-integrations-1.16.1.apk
-Patches: inotia00/patches-5.6.2.rvp
-[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v5.6.2)
+Patches: inotia00/patches-5.7.1.rvp
+[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v5.7.1)
 
 
 CLI: ReVanced
