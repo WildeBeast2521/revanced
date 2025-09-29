@@ -70,7 +70,7 @@ jobs:
           - id: "YouTube-anddea"
           - id: "Music-anddea"
           - id: "GooglePhotos"
-          - id: "Spotify"
+          #   - id: "Spotify"
           #   - id: "YouTube-Extended"
           #   - id: "Music-Extended"
           #   - id: "Reddit-Extended"
