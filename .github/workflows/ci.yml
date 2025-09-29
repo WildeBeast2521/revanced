@@ -42,22 +42,22 @@ jobs:
     outputs:
       SHOULD_BUILD: ${{ steps.should_build.outputs.SHOULD_BUILD }}
 
-  update-spotify:
-     runs-on: ubuntu-latest
-     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-        with:
-          fetch-depth: 0
-
-      - name: Set up Git identity
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Update Spotify version
-        run: |
-           ./update_spotify.sh
+#  update-spotify:
+#     runs-on: ubuntu-latest
+#     steps:
+#      - name: Checkout
+#        uses: actions/checkout@v4.2.2
+#        with:
+#          fetch-depth: 0
+#
+#      - name: Set up Git identity
+#        run: |
+#          git config user.name "github-actions[bot]"
+#          git config user.email "github-actions[bot]@users.noreply.github.com"
+#
+#      - name: Update Spotify version
+#        run: |
+#           ./update_spotify.sh
 
   matrix-build:
     permissions: write-all
