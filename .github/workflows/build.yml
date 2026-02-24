@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Build Modules
 on:
   workflow_call:
@@ -145,3 +146,25 @@ jobs:
           MSG=${MSG:0:9450}
           POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
+=======
+on: workflow_dispatch
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          git clone "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" .
+          ./build-module.sh
+      - id: get_output_name
+        run: echo ::set-output name=OUTPUT::$(cat build-module.sh | sed -n 's/.*OUTPUT="\(.*\)".*/\1/p')
+        shell: bash
+      - name: Upload release
+        uses: svenstaro/upload-release-action@2.3.0
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ steps.get_output_name.outputs.OUTPUT }}
+          asset_name: ${{ steps.get_output_name.outputs.OUTPUT }}
+          release_name: ${{ steps.get_output_name.outputs.OUTPUT }}
+          overwrite: true
+>>>>>>> 26409f7d2a6ea4a07769affbfa7c1983889678e6
